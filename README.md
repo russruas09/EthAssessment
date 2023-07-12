@@ -1,4 +1,5 @@
 MyToken Contract
+
 This smart contract was created using the programming language Solidity, which is used to develop Ethereum-based smart contracts. A fundamental ERC-20 token named "MyToken" with the symbol "RUSS" is defined in the contract. The contract permits the creation and burning of tokens as well as checking token balances.
 
 Prerequisites

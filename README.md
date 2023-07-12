@@ -15,6 +15,7 @@ Copy code
 pragma solidity 0.8.18;
 
 
+
 contract MyToken {
 
     // Public variables
@@ -41,6 +42,7 @@ contract MyToken {
         }
     }
 }
+
 
 
 Contract Details

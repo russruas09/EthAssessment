@@ -29,6 +29,7 @@ contract MyToken {
         }   
     }
 }
+
 Public Variables
 The following public variables are defined in the contract:
 

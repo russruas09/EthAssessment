@@ -5,10 +5,10 @@ Code
 solidity
 
 
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
+    // SPDX-License-Identifier: MIT
+    pragma solidity 0.8.18;
 
-contract MyToken {
+    contract MyToken {
 
     // public variables here
     string public tokenName = "RUSSRUSS";
@@ -27,9 +27,9 @@ contract MyToken {
         if (balances[_address] >= _value){
         totalSupply -= _value;
         balances [_address] -= _value;  
-        }   
+            }   
+        }
     }
-}
 
 
 Public Variables

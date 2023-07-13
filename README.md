@@ -3,7 +3,8 @@ This Solidity contract implements a basic token called MyToken, with the functio
 
 Code
 solidity
-Copy code
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
@@ -29,6 +30,7 @@ contract MyToken {
         }   
     }
 }
+
 
 Public Variables
 The following public variables are defined in the contract:

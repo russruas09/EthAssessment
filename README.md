@@ -1,6 +1,20 @@
 MyToken Contract
 
-This Solidity contract implements a basic token called MyToken, with the functionality of minting and burning tokens.
+This Solidity contract implements a basic token called MyToken, with the functionality of minting and burning tokens.The contract is implemented in Solidity, a programming language used for writing smart contracts on the Ethereum blockchain.
+
+
+The following conditions are intended to be satisfied by the MyToken contract:
+
+
+Public variables in the contract should be used to record information about the coin, such as the token name, token abbreviation, and the total supply.
+
+There should be a mapping in the contract that links addresses to token balances.
+
+A mint feature that raises the total quantity of tokens and boosts the balance at the "sender" address should be included in the contract.
+
+A burn function that reduces the overall supply of tokens and subtracts the specified sum from the balance of the "sender" address should be included in the contract.
+
+To guarantee that the balance of the "sender" is more than or equal to the amount to be burned, the burn function should have conditionals.
 
 Code
 

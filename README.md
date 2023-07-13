@@ -3,6 +3,8 @@ MyToken Contract
 This Solidity contract implements a basic token called MyToken, with the functionality of minting and burning tokens.The contract is implemented in Solidity, a programming language used for writing smart contracts on the Ethereum blockchain.
 
 
+Requirements
+
 The following conditions are intended to be satisfied by the MyToken contract:
 
 

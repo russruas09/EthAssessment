@@ -1,17 +1,10 @@
 MyToken Contract
+This Solidity contract implements a basic token called MyToken, with the functionality of minting and burning tokens.
 
-This smart contract was created using the programming language Solidity, which is used to develop Ethereum-based smart contracts. A fundamental ERC-20 token named "MyToken" with the symbol "RUSS" is defined in the contract. The contract permits the creation and burning of tokens as well as checking token balances.
-
-Prerequisites
-
-This code requires Solidity version 0.8.18 or a compatible version to compile and deploy.
-
-Contract Overview
-
-The MyToken contract is defined as follows:
-
+Code
 solidity
 Copy code
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
 contract MyToken {
@@ -36,38 +29,20 @@ contract MyToken {
         }   
     }
 }
-
-Contract Details
-
-The contract consists of the following components:
-
 Public Variables
+The following public variables are defined in the contract:
 
-tokenName (string): Represents the name of the token. In this case, it is set to "RUSSRUSS".
-tokenAbbrv (string): Represents the abbreviated symbol of the token. In this case, it is set to "RUSS".
-totalsupply (uint): Represents the total supply of tokens. Initially set to 0.
-
-Mapping Variable
-
-balances (mapping): This mapping associates Ethereum addresses with their respective token balances. It allows users to query the balance of a specific address using the balances[_address] syntax.
+tokenName: A string representing the name of the token (e.g., "RUSSRUSS").
+tokenAbbrv: A string representing the abbreviated name of the token (e.g., "RUSS").
+totalSupply: An unsigned integer representing the total supply of the token. Initially set to 0.
+Mapping
+The contract uses a mapping variable named balances to keep track of token balances for each address. The mapping maps an address to an unsigned integer representing the balance of tokens owned by that address.
 
 Mint Function
-
-The mint function is used to create new tokens and assign them to a specified address. It takes two parameters:
-_address (address): The address to which the newly created tokens will be assigned.
-_value (uint): The number of tokens to be created and assigned
-Inside the mint function, the total supply is increased by the _value amount, and the _value tokens are added to the balance of the _address.
+The mint function allows the creation of new tokens and assigns them to a specified address. It takes two parameters: _address (the recipient address) and _value (the amount of tokens to be minted). The function increases the total supply of tokens by the specified value and adds the minted tokens to the balance of the specified address.
 
 Burn Function
+The burn function allows the destruction of tokens owned by a specified address. It takes two parameters: _address (the address owning the tokens) and _value (the amount of tokens to be burned). The function checks if the balance of the specified address is greater than or equal to the value to be burned. If so, it decreases the total supply by the specified value and reduces the balance of the specified address by the burned tokens.
 
-The burn function is used to remove tokens from a specified address. It takes two parameters:
-_address (address): The address from which tokens will be burned.
-_value (uint): The number of tokens to be burned.
-Inside the burn function, it first checks if the balance of the _address is greater than or equal to the _value. If it is, the total supply is decreased by the _value amount, and the _value tokens are subtracted from the balance of the _address.
-
-Usage
-
-Deploy the MyToken contract using a Solidity compiler that works with the Ethereum network.
-You can talk to the contract after it has been deployed by calling the mint and burn functions.
-Call the mint function, indicate the address to which the tokens should be assigned, and the required quantity of tokens to be created.
-To remove tokens, call the burn function and provide the address and number of tokens that should be burned.
+License
+This contract is released under the MIT License.
